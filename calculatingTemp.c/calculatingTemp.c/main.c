@@ -17,13 +17,11 @@ int main()
 	while (celsius < 100)
 	{
 		celsius = celsius + 10;
-		float fahrenheit = celsius_to_fahrenheit(celsius);
-		float kelvin = celsius_to_kelvin(celsius);
 
 		printf("%.2f C = %.2f F = %.2f K\n",
 			celsius,
-			fahrenheit,
-			kelvin);
+			celsius_to_fahrenheit(celsius),
+			celsius_to_kelvin(celsius));
 	}
 	printf("Press ENTER key to Continue\n");
 	getchar();
